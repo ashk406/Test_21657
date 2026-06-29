@@ -4,44 +4,44 @@
         <flatlistofchildren>
             <testcase
             name="TestCase"
-            id="1cbf6c87-926f-43b8-a089-2b4b621c3e09">
+            id="c86d3c7a-b93c-4ade-9d49-1df2bc915d65">
             </testcase>
             <testmodule
             name="Recording1"
-            id="cdd9cc8b-2819-4458-8f86-c1c1b9c5d7d9"
-            ref="1268d38f-5403-461d-af64-956fd7f93ccb"
+            id="d77dc905-5663-47a3-acae-ceceb4a48ac2"
+            ref="6270e80a-9b52-4c51-accc-6ff95cd928ee"
             type="Recording"/>
             <testmodule
             name="StartAUT"
-            id="40797487-cd91-415f-bb44-14a931eab4ec"
-            ref="bd621327-dbdd-4e62-a2b4-6f9e59e8e878"
+            id="cbfa5802-eadb-47b5-8222-6658e2762145"
+            ref="9b065cad-68b6-422d-86fa-a6d9711ec4e3"
             type="Recording">
                 <databinding>
                     <var
                         dataname="AppProcessID"
-                        datasourceid="294ba534-40e9-4e4b-bc88-f3775d4425e1"
-                        variableid="0bfd9fe3-1f64-4586-841e-af890ef701e6"
+                        datasourceid="7051d2f8-f6cb-4553-9b00-7d0b6ab376a0"
+                        variableid="b2d50bc7-94c7-4157-9425-43f5ff057c47"
                         variablename="StartAutProcessIDVar">
                     </var>
                 </databinding>
             </testmodule>
             <testmodule
             name="CloseAUT"
-            id="4e395d0d-ac60-4d81-a86a-fee987194a06"
-            ref="acdd7c6a-b4ff-487d-a372-a770eeffab08"
+            id="19e6fe48-6cb0-442e-9cbf-1fe23058c449"
+            ref="d7d82b84-26b4-4015-8539-dffcbc2d717e"
             type="Recording">
                 <databinding>
                     <var
                         dataname="AppProcessID"
-                        datasourceid="294ba534-40e9-4e4b-bc88-f3775d4425e1"
-                        variableid="a6662628-03b4-42a6-88ac-ea70f3dcf97e"
+                        datasourceid="7051d2f8-f6cb-4553-9b00-7d0b6ab376a0"
+                        variableid="b281117a-4603-41ed-92bd-51dc3c9efeb9"
                         variablename="CloseAutProcessIDVar">
                     </var>
                 </databinding>
             </testmodule>
             <testcase
             name="Test_21657"
-            id="294ba534-40e9-4e4b-bc88-f3775d4425e1"
+            id="7051d2f8-f6cb-4553-9b00-7d0b6ab376a0"
             reportlevel="Info;20">
             <parameters>
                 <param
@@ -51,11 +51,11 @@
             </parameters>
             </testcase>
             <teardown
-            id="98eed944-6504-43a4-8ee0-1f26abca432b"
+            id="9e193a27-b02e-4204-8006-bba06f874f6a"
             name="teardown">
             </teardown>
             <setup
-            id="6120897e-97cc-4dee-90a7-0cb580355604"
+            id="c63810da-1a89-4e77-abed-e16c2e4d4630"
             name="setup">
             </setup>
             <testsuite
@@ -67,7 +67,7 @@
             VideoRecordingMode="Off"
             VideoSource="Auto"
             enabletracingscreenshots="True"
-            id="0c128688-a47f-498f-a8d4-a54f135536c6"
+            id="580cf636-edf4-4ca7-8e5f-6fe9dc3b6145"
             junitreport="False"
             name="Test_21657"
             reportcompress="False"
@@ -81,28 +81,28 @@
         <childhierarchy>
             <testsuite
             name="Test_21657"
-            id="0c128688-a47f-498f-a8d4-a54f135536c6">
+            id="580cf636-edf4-4ca7-8e5f-6fe9dc3b6145">
                 <testcase
                 name="Test_21657"
-                id="294ba534-40e9-4e4b-bc88-f3775d4425e1">
+                id="7051d2f8-f6cb-4553-9b00-7d0b6ab376a0">
                     <testcase
                     name="TestCase"
-                    id="1cbf6c87-926f-43b8-a089-2b4b621c3e09">
+                    id="c86d3c7a-b93c-4ade-9d49-1df2bc915d65">
                         <setup
-                        id="6120897e-97cc-4dee-90a7-0cb580355604"
+                        id="c63810da-1a89-4e77-abed-e16c2e4d4630"
                         name="setup">
                             <testmodule
-                            id="40797487-cd91-415f-bb44-14a931eab4ec"
+                            id="cbfa5802-eadb-47b5-8222-6658e2762145"
                             name="StartAUT"/>
                         </setup>
                         <testmodule
-                        id="cdd9cc8b-2819-4458-8f86-c1c1b9c5d7d9"
+                        id="d77dc905-5663-47a3-acae-ceceb4a48ac2"
                         name="Recording1"/>
                         <teardown
-                        id="98eed944-6504-43a4-8ee0-1f26abca432b"
+                        id="9e193a27-b02e-4204-8006-bba06f874f6a"
                         name="teardown">
                             <testmodule
-                            id="4e395d0d-ac60-4d81-a86a-fee987194a06"
+                            id="19e6fe48-6cb0-442e-9cbf-1fe23058c449"
                             name="CloseAUT"/>
                         </teardown>
                     </testcase>
@@ -116,9 +116,9 @@
         <testconfiguration
         name="TestRun">
             <testcase
-            id="1cbf6c87-926f-43b8-a089-2b4b621c3e09"/>
+            id="c86d3c7a-b93c-4ade-9d49-1df2bc915d65"/>
             <testcase
-            id="294ba534-40e9-4e4b-bc88-f3775d4425e1"/>
+            id="7051d2f8-f6cb-4553-9b00-7d0b6ab376a0"/>
         </testconfiguration>
     </testconfigurations>
     <references/>
