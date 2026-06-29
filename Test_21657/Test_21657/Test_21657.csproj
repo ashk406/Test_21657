@@ -180,6 +180,12 @@
       <id>0086b11e-5fba-43f0-8af5-911ee55e7fa2</id>
       <recordtableid>d7d82b84-26b4-4015-8539-dffcbc2d717e</recordtableid>
     </None>
+    <None Include="Git_Add.txt">
+      <id>3750eabb-ae02-49f7-b8db-f91fce4759bc</id>
+    </None>
+    <None Include="LocalAdd.txt">
+      <id>d8214b65-c1f1-4c45-a94e-928f6930d41c</id>
+    </None>
     <None Include="Recording1.rxrec">
       <BoundTo>1b495e0c-d519-4eec-9de0-264fbb3f90d1</BoundTo>
       <id>ef8fa0e5-9823-4cd5-b68f-6fd435ffa9e0</id>
