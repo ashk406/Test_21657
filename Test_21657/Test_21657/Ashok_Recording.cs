@@ -24,47 +24,34 @@ namespace Test_21657
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The Ashok_Recording recording.
     /// </summary>
-    [TestModule("9b065cad-68b6-422d-86fa-a6d9711ec4e3", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("1c7e2330-138a-43b7-b663-b0fffb97d149", ModuleType.Recording, 1)]
+    public partial class Ashok_Recording : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Test_21657Repository repository.
         /// </summary>
         public static Test_21657Repository repo = Test_21657Repository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static Ashok_Recording instance = new Ashok_Recording();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public Ashok_Recording()
         {
-            StartAutProcessIDVar = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static Ashok_Recording Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _StartAutProcessIDVar;
-
-        /// <summary>
-        /// Gets or sets the value of variable StartAutProcessIDVar.
-        /// </summary>
-        [TestVariable("b2d50bc7-94c7-4157-9425-43f5ff057c47")]
-        public string StartAutProcessIDVar
-        {
-            get { return _StartAutProcessIDVar; }
-            set { _StartAutProcessIDVar = value; }
-        }
 
 #endregion
 
@@ -92,16 +79,9 @@ namespace Test_21657
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_11.2604.5.0_x64__8wekyb3d8bbwe\\Notepad\\Notepad.exe' in normal mode. Return value bound to $StartAutProcessIDVar.", new RecordItemIndex(0));
-            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_11.2604.5.0_x64__8wekyb3d8bbwe\\Notepad\\Notepad.exe", "", "", false));
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UntitledNotepad.Text' at 217;93.", repo.UntitledNotepad.TextInfo, new RecordItemIndex(1));
-            repo.UntitledNotepad.Text.Click("217;93");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Test' with focus on 'UntitledNotepad.Text'.", repo.UntitledNotepad.TextInfo, new RecordItemIndex(2));
-            repo.UntitledNotepad.Text.PressKeys("Test");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click at {X=0,Y=0}.", new RecordItemIndex(0));
+            Mouse.MoveTo(0, 0);
+            Mouse.Click(System.Windows.Forms.MouseButtons.Left);
             Delay.Milliseconds(0);
             
         }

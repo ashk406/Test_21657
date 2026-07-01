@@ -1,3 +1,1 @@
-﻿Added locally
-
-Modified from Git
+﻿Added localy again

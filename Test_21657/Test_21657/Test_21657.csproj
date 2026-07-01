@@ -122,6 +122,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ashok_Recording.cs">
+      <BoundTo>c6ce5672-9bed-4f1b-b319-a1638d5f1f9c</BoundTo>
+      <DependentUpon>Ashok_Recording.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>878b71a3-6940-42e4-a1b3-758eeb19916e</id>
+    </Compile>
+    <Compile Include="Ashok_Recording.UserCode.cs">
+      <BoundTo>c6ce5672-9bed-4f1b-b319-a1638d5f1f9c</BoundTo>
+      <DependentUpon>Ashok_Recording.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>256ff21b-ac77-4855-9177-c93cdb55eedf</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>360ca4f8-4e06-4189-a901-1c21234a8547</id>
     </Compile>
@@ -174,6 +186,11 @@
   <ItemGroup>
     <None Include="app.config">
       <id>bc0fb653-996e-4bcb-a6cb-32acffa9ba89</id>
+    </None>
+    <None Include="Ashok_Recording.rxrec">
+      <BoundTo>1b495e0c-d519-4eec-9de0-264fbb3f90d1</BoundTo>
+      <id>c6ce5672-9bed-4f1b-b319-a1638d5f1f9c</id>
+      <recordtableid>1c7e2330-138a-43b7-b663-b0fffb97d149</recordtableid>
     </None>
     <None Include="CloseAUT.rxrec">
       <BoundTo>1b495e0c-d519-4eec-9de0-264fbb3f90d1</BoundTo>

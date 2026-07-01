@@ -27,6 +27,9 @@ namespace Test_21657
     public partial class Test_21657Repository : RepoGenBaseFolder
     {
         static Test_21657Repository instance = new Test_21657Repository();
+        Test_21657RepositoryFolders.UntitledNotepadAppFolder _untitlednotepad;
+        Test_21657RepositoryFolders.Test21657Test21657Test21657AtMainAppFolder _test21657test21657test21657atmain;
+        Test_21657RepositoryFolders.ExplorerAppFolder _explorer;
 
         /// <summary>
         /// Gets the singleton class instance representing the Test_21657Repository element repository.
@@ -43,6 +46,9 @@ namespace Test_21657
         public Test_21657Repository() 
             : base("Test_21657Repository", "/", null, 0, false, "85685e61-e451-457b-b0eb-612b479d035b", ".\\RepositoryImages\\Test_21657Repository85685e61.rximgres")
         {
+            _untitlednotepad = new Test_21657RepositoryFolders.UntitledNotepadAppFolder(this);
+            _test21657test21657test21657atmain = new Test_21657RepositoryFolders.Test21657Test21657Test21657AtMainAppFolder(this);
+            _explorer = new Test_21657RepositoryFolders.ExplorerAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +66,33 @@ namespace Test_21657
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The UntitledNotepad folder.
+        /// </summary>
+        [RepositoryFolder("d1e5866e-0281-4350-9dee-2199e580e5cd")]
+        public virtual Test_21657RepositoryFolders.UntitledNotepadAppFolder UntitledNotepad
+        {
+            get { return _untitlednotepad; }
+        }
+
+        /// <summary>
+        /// The Test21657Test21657Test21657AtMain folder.
+        /// </summary>
+        [RepositoryFolder("c7803108-2b3d-4339-bdcf-9942477e021f")]
+        public virtual Test_21657RepositoryFolders.Test21657Test21657Test21657AtMainAppFolder Test21657Test21657Test21657AtMain
+        {
+            get { return _test21657test21657test21657atmain; }
+        }
+
+        /// <summary>
+        /// The Explorer folder.
+        /// </summary>
+        [RepositoryFolder("a1786b9f-819e-4d4a-8971-35bf6c06df5a")]
+        public virtual Test_21657RepositoryFolders.ExplorerAppFolder Explorer
+        {
+            get { return _explorer; }
+        }
     }
 
     /// <summary>
@@ -68,6 +101,204 @@ namespace Test_21657
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
     public partial class Test_21657RepositoryFolders
     {
+        /// <summary>
+        /// The UntitledNotepadAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("d1e5866e-0281-4350-9dee-2199e580e5cd")]
+        public partial class UntitledNotepadAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _textInfo;
+
+            /// <summary>
+            /// Creates a new UntitledNotepad  folder.
+            /// </summary>
+            public UntitledNotepadAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("UntitledNotepad", "/form[@title='Untitled - Notepad']", parentFolder, 30000, null, true, "d1e5866e-0281-4350-9dee-2199e580e5cd", "")
+            {
+                _textInfo = new RepoItemInfo(this, "Text", "element[@class='NotepadTextBox']/?/?/text[@accessiblerole='Text']", ".//text[@accessiblerole='Text']", 30000, null, "af914be9-eddc-4549-a00c-f62d6225f64e");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("d1e5866e-0281-4350-9dee-2199e580e5cd")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d1e5866e-0281-4350-9dee-2199e580e5cd")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text item.
+            /// </summary>
+            [RepositoryItem("af914be9-eddc-4549-a00c-f62d6225f64e")]
+            public virtual Ranorex.Text Text
+            {
+                get
+                {
+                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text item info.
+            /// </summary>
+            [RepositoryItemInfo("af914be9-eddc-4549-a00c-f62d6225f64e")]
+            public virtual RepoItemInfo TextInfo
+            {
+                get
+                {
+                    return _textInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Test21657Test21657Test21657AtMainAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c7803108-2b3d-4339-bdcf-9942477e021f")]
+        public partial class Test21657Test21657Test21657AtMainAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _reactdirectoryfilenamecolumnInfo;
+
+            /// <summary>
+            /// Creates a new Test21657Test21657Test21657AtMain  folder.
+            /// </summary>
+            public Test21657Test21657Test21657AtMainAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Test21657Test21657Test21657AtMain", "/dom[@domain='github.com']", parentFolder, 30000, null, false, "c7803108-2b3d-4339-bdcf-9942477e021f", "")
+            {
+                _reactdirectoryfilenamecolumnInfo = new RepoItemInfo(this, "ReactDirectoryFilenameColumn", ".//div[#'repo-content-pjax-container']/tag[@tagname='react-app']/div/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div[4]/?/?/table/tbody/tr[13]/td[2]/div", ".//div[#'repo-content-pjax-container']//tbody/tr[13]/td[2]/div", 30000, null, "d53a8d93-be9e-4be6-b246-ead88b27f154");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c7803108-2b3d-4339-bdcf-9942477e021f")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c7803108-2b3d-4339-bdcf-9942477e021f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ReactDirectoryFilenameColumn item.
+            /// </summary>
+            [RepositoryItem("d53a8d93-be9e-4be6-b246-ead88b27f154")]
+            public virtual Ranorex.DivTag ReactDirectoryFilenameColumn
+            {
+                get
+                {
+                    return _reactdirectoryfilenamecolumnInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ReactDirectoryFilenameColumn item info.
+            /// </summary>
+            [RepositoryItemInfo("d53a8d93-be9e-4be6-b246-ead88b27f154")]
+            public virtual RepoItemInfo ReactDirectoryFilenameColumnInfo
+            {
+                get
+                {
+                    return _reactdirectoryfilenamecolumnInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ExplorerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("a1786b9f-819e-4d4a-8971-35bf6c06df5a")]
+        public partial class ExplorerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _mstasklistwclassInfo;
+
+            /// <summary>
+            /// Creates a new Explorer  folder.
+            /// </summary>
+            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 30000, null, true, "a1786b9f-819e-4d4a-8971-35bf6c06df5a", "")
+            {
+                _mstasklistwclassInfo = new RepoItemInfo(this, "MSTaskListWClass", "?/?/element[@class='MSTaskListWClass']", "?/?/element[@class='MSTaskListWClass']", 30000, null, "5dad8dc9-d09e-4ae1-815b-53dd608cb5e6");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("a1786b9f-819e-4d4a-8971-35bf6c06df5a")]
+            public virtual Ranorex.MenuBar Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MenuBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("a1786b9f-819e-4d4a-8971-35bf6c06df5a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MSTaskListWClass item.
+            /// </summary>
+            [RepositoryItem("5dad8dc9-d09e-4ae1-815b-53dd608cb5e6")]
+            public virtual Ranorex.Unknown MSTaskListWClass
+            {
+                get
+                {
+                    return _mstasklistwclassInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MSTaskListWClass item info.
+            /// </summary>
+            [RepositoryItemInfo("5dad8dc9-d09e-4ae1-815b-53dd608cb5e6")]
+            public virtual RepoItemInfo MSTaskListWClassInfo
+            {
+                get
+                {
+                    return _mstasklistwclassInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }
